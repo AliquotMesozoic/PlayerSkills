@@ -1,0 +1,16 @@
+[
+{
+  "modid": "PlayerSkills",
+  "name": "Player Skills",
+  "description": "Upgrade your player, not your tools",
+  "version": "${mod_version}",
+  "mcversion": "${minecraft_version}",
+  "url": "https://www.github.com/AliquotMesozoic/PlayerSkills",
+  "updateUrl": "",
+  "authorList": ["AliquotMesozoic"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

@@ -1,0 +1,14 @@
+package aliquot.mcmods.playerskills;
+
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.Mod.Instance;
+
+@Mod(modid = PlayerSkillsCore.MODID, version = PlayerSkillsCore.VERSION)
+public class PlayerSkillsCore {
+	public static final String MODID = "PlayerSkills";
+	public static final String VERSION = "@VERSION@";
+	public static final String MODNAME = "PlayerSkills";
+	
+	@Instance(MODID)
+	public static PlayerSkillsCore instance;
+}

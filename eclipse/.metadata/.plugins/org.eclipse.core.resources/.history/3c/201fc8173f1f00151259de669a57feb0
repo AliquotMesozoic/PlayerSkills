@@ -1,0 +1,19 @@
+package aliquot.mcmods.playerskills;
+
+import aliquot.mcmods.playerskills.proxies.CommonProxy;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.Mod.Instance;
+import net.minecraftforge.fml.common.SidedProxy;
+
+@Mod(modid = PSCore.MODID, version = PSCore.VERSION)
+public class PSCore {
+	public static final String MODID = "PlayerSkills";
+	public static final String VERSION = "@VERSION@";
+	public static final String MODNAME = "PlayerSkills";
+	
+	@Instance(MODID)
+	public static PSCore instance;
+	
+	@SidedProxy(clientSide = "aliquot.mcmods.playerskills.proxies.ClientProxy", serverSide = "aliquot.mcmods.playerskills.proxies.CommonProxy")
+	public static CommonProxy proxy;
+}
