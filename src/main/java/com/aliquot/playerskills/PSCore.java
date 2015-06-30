@@ -22,6 +22,7 @@ public class PSCore {
 	
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
+		proxy.preInit();
 		// Load config
 		// Register GUI handler
 		// Register events handler
@@ -30,6 +31,7 @@ public class PSCore {
 	
 	@EventHandler
 	public void init(FMLInitializationEvent event) {
+		proxy.init();
 		// Load blocks/items
 		// Register key binds
 		// Register renderers
@@ -38,6 +40,6 @@ public class PSCore {
 	
 	@EventHandler
 	public void postInit(FMLPostInitializationEvent event) {
-		
+		proxy.postInit();
 	}
 }
