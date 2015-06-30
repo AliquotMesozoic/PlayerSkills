@@ -1,6 +1,8 @@
-package aliquot.mcmods.playerskills;
+package com.aliquot.playerskills;
 
-import aliquot.mcmods.playerskills.proxies.CommonProxy;
+import com.aliquot.playerskills.proxy.CommonProxy;
+import com.aliquot.playerskills.reference.Reference;
+
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
@@ -9,16 +11,13 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
-@Mod(modid = PSCore.MODID, version = PSCore.VERSION)
+@Mod(modid = Reference.MODID, version = Reference.VERSION)
 public class PSCore {
-	public static final String MODID = "PlayerSkills";
-	public static final String VERSION = "@VERSION@";
-	public static final String MODNAME = "PlayerSkills";
 	
-	@Instance(MODID)
+	@Instance(Reference.MODID)
 	public static PSCore instance;
 	
-	@SidedProxy(clientSide = "aliquot.mcmods.playerskills.proxies.ClientProxy", serverSide = "aliquot.mcmods.playerskills.proxies.CommonProxy")
+	@SidedProxy(clientSide = Reference.CLIENT_PROXY_CLASS, serverSide = Reference.SERVER_PROXY_CLASS)
 	public static CommonProxy proxy;
 	
 	@EventHandler
