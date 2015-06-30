@@ -1,8 +1,7 @@
-package com.aliquot.playerskills;
+package aliquot.mcmods.playerskills;
 
-import com.aliquot.playerskills.proxy.CommonProxy;
-import com.aliquot.playerskills.reference.Reference;
-
+import aliquot.mcmods.playerskills.proxy.CommonProxy;
+import aliquot.mcmods.playerskills.reference.Reference;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;

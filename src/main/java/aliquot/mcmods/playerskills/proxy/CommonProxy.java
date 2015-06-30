@@ -1,4 +1,4 @@
-package com.aliquot.playerskills.proxy;
+package aliquot.mcmods.playerskills.proxy;
 
 public class CommonProxy {
 
